@@ -137,7 +137,7 @@ async function FindClosestRoute() {
           }
       }
         // Reverse the path (so it goes from start to end)
-      //   path.reverse();
+        path.reverse();
   
         // Visualize the path
         for (let i = 0; i < path.length; i++) {
