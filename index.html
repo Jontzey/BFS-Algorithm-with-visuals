@@ -6,74 +6,14 @@
     <title>Document</title>
     <link rel="icon" type="" href="">
     <link rel="stylesheet" href="index.css">
-    <style>
-        .grid-container {
-            display: grid;
-            justify-content: center;
-            grid-template-columns: repeat(20, 40px);
-            grid-template-rows: repeat(20, 40px);
-            gap: 0px;
-            /* border: 2px solid black; */
-        }
-        .grid-item {
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            border: 1px solid black;
-            box-sizing: border-box;
-            font-size: 10px;
-        }
-        .wall {
-    background-color: black;
-}
-
-.start {
-    background-color: green;
-}
-
-.end {
-    background-color: red;
-}
-
-.path {
-    background-color: yellow;
-}
-
-.path2 {
-    background-color: rgb(3, 27, 248);
-}
-
-#test{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    text-align: center;
-}
-
-.dataRowCols{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 140px !important;
-    border: solid black;
-    margin: 10px;
-}
-#test2 {
-            display: grid;
-            grid-template-columns: repeat(20, 40px);
-            grid-template-rows: repeat(20, 40px);
-            gap: 1px;
-            border: 1px solid black;
-        }
-    </style>
 </head>
 <body style="margin: 0;">
     <div style="display: flex; justify-content: center; align-items: center;">
 
         <input id="btn-start" type="button" onclick="StartMaze()" hidden />
-        <label class="start-btn" for="btn-start">
-           START Search
+        <label class="start-btn" for="btn-start" >
+           <h4 class="lbl-text">Start</h4>
+           <h4 class="lbl-text">Search</h4>
         </label>
     </div>
     <div class="grid-container" id="grid-container"></div>
@@ -83,7 +23,7 @@
      <div id="test">
 
      </div>
-
+     <h1 style="width: 100%; text-align: center;"> Retrack Log: </h1>
      <div id="test2">
 
      </div>

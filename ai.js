@@ -124,9 +124,17 @@ async function FindClosestRoute() {
   
           const currentKey = `${current[0]}-${current[1]}`;
           current = cameFrom[currentKey];  // Move to the parent cell
-  
+            
           // Debug log to see the transition
           console.log(`Current: ${currentKey}, Next: ${current ? `${current[0]}-${current[1]}` : 'null'}`);
+          if(current !== null){
+              const t = document.getElementById("test2");
+              const p = document.createElement('div');
+
+              p.classList = "dataRowCols"
+              p.innerHTML += ` row ${current[0]}, col ${current}`
+              t.appendChild(p);
+          }
       }
         // Reverse the path (so it goes from start to end)
       //   path.reverse();

@@ -4,11 +4,84 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-direction: column;
+    gap: 0;
     width: 12vh;
     height: 12vh;
     margin: 10px;
     background-color: lightgreen;
     border-radius: 50%;
     
+}
+
+
+
+
+
+
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(20, 40px);
+    grid-template-rows: repeat(20, 40px);
+    gap: 0px;
+    /* border: 2px solid black; */
+}
+.grid-item {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+.wall {
+background-color: black;
+}
+
+.start {
+background-color: green;
+}
+
+.end {
+background-color: red;
+}
+
+.path {
+background-color: yellow;
+}
+
+.path2 {
+background-color: rgb(3, 27, 248);
+}
+
+#test{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+text-align: center;
+padding: 60px;
+}
+
+.dataRowCols{
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+width: 140px !important;
+border: solid black;
+margin: 10px;
+
+}
+#test2 {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+text-align: center;
+padding: 20px;
+}
+.lbl-text{
+    margin: 0;
+    font-size: 1rem;
 }
