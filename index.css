@@ -1,0 +1,14 @@
+
+
+.start-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 12vh;
+    height: 12vh;
+    margin: 10px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    
+}

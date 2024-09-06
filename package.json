@@ -1,0 +1,21 @@
+{
+  "name": "hehe",
+  "version": "1.0.0",
+  "description": "A small project showing visual how bfs works",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.11.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
